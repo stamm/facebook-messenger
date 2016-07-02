@@ -36,6 +36,10 @@ module Facebook
         def attachments
           @messaging['message']['attachments']
         end
+
+        def echo?
+          @messaging['message']['is_echo']
+        end
       end
     end
   end
